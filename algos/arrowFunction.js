@@ -15,10 +15,10 @@
 
 
 //Arrow Function
-const whatsUp = (firstName, lastName) => {
-    console.log("whats up " + firstName + " " + lastName);
+const whatsUp = (firstName, middleName, lastName) => {
+    console.log("whats up " + firstName + " " + middleName + " " + lastName);
     return "rice";
 }
 
-whatsUp("Brian", "Rice");
-whatsUp("Nicholas", "Rice");
+whatsUp("Brian", "Nicholas", "Rice");
+whatsUp("Nicholas", "Brian", "Rice"); 
