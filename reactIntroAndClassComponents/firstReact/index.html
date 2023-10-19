@@ -1,0 +1,33 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello React</title>
+</head>
+
+<body>
+    <div id="root">
+        <h1>First React page rendering...</h1>
+    </div>
+    <div id="rootTwo">
+        <h1>Second React page rendering...</h1>
+    </div>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+    <script>
+        //dynamically generate an h1 tag with content inside of it usinng React.createRoot()
+
+        const domContainer = document.querySelector('#root');
+        const root = ReactDOM.createRoot(domContainer);
+        root.render(React.createElement("h1", {}, "Our First React page has rendered"));
+        console.log("root look like this -->", root);
+
+        const domContainerTwo = document.querySelector('#rootTwo');
+        const rootTwo = ReactDOM.createRoot(domContainerTwo);
+        rootTwo.render(React.createElement("h1", {}, "Our Second React pargraphhas rendered"));
+    </script>
+
+</body>
+
+</html>
